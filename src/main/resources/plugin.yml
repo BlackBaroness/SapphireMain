@@ -1,0 +1,3 @@
+name: SapphireMain
+version: ${project.version}
+main: ru.sapphirelife.SapphireMain
