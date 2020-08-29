@@ -58,6 +58,10 @@ public final class SapphireMain extends JavaPlugin {
         return new ItemStack(Material.getMaterial("SAPPHIREDONATE_SCROLL_50"));
     }
 
+    public ItemStack getDough() {
+        return new ItemStack(Material.getMaterial("SAPPHIREBREAD_TIESTO"));
+    }
+
     public ItemStack getSecretSword() {
         ItemStack secretSword = new ItemStack(Material.DIAMOND_SWORD);
         ItemMeta meta3 = secretSword.getItemMeta();
