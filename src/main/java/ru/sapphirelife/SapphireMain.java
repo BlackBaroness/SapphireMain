@@ -13,10 +13,6 @@ public final class SapphireMain extends JavaPlugin {
 
     private static SapphireMain instance;
 
-    SapphireMain(SapphireMain ignored) {
-        // конструктор для того, чтобы случайно не создать экземпляр класса
-    }
-
     @Override
     public void onEnable() {
         instance = this;
