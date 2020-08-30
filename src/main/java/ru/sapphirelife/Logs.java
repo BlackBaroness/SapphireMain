@@ -7,7 +7,7 @@ public class Logs {
     private static final String prefix = ChatColor.YELLOW + "[LOG] ";
 
     public static void log(String msg) {
-        System.out.println(prefix + ChatColor.RESET + msg);
+        System.out.println(prefix + ChatColor.RESET + "" + ChatColor.WHITE + msg);
     }
 
     public static void error(String msg) {
