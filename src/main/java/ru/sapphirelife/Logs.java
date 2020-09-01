@@ -20,6 +20,11 @@ public class Logs {
         System.out.println(prefix + ChatColor.RED + msg);
     }
 
+    public static void error(StackTraceElement msg) {
+        System.out.println(prefix + ChatColor.RED + msg);
+    }
+
+
     public static void error(String... msg) {
         for (String message : msg) {
             System.out.println(prefix + ChatColor.RED + message);
@@ -36,5 +41,9 @@ public class Logs {
         }
     }
 
-
+    public static void logStackTrace(StackTraceElement[] stackTrace) {
+        for (StackTraceElement element : stackTrace) {
+            error(element);
+        }
+    }
 }
