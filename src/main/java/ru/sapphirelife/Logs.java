@@ -10,11 +10,31 @@ public class Logs {
         System.out.println(prefix + ChatColor.RESET + "" + ChatColor.WHITE + msg);
     }
 
+    public static void log(String... msg) {
+        for (String message : msg) {
+            System.out.println(prefix + ChatColor.RED + message);
+        }
+    }
+
     public static void error(String msg) {
         System.out.println(prefix + ChatColor.RED + msg);
+    }
+
+    public static void error(String... msg) {
+        for (String message : msg) {
+            System.out.println(prefix + ChatColor.RED + message);
+        }
     }
 
     public static void success(String msg) {
         System.out.println(prefix + ChatColor.GREEN + msg);
     }
+
+    public static void success(String... msg) {
+        for (String message : msg) {
+            System.out.println(prefix + ChatColor.RED + message);
+        }
+    }
+
+
 }
